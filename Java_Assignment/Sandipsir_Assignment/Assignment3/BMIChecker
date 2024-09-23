@@ -1,0 +1,49 @@
+Q 2)
+import java.util.Scanner;
+
+public class BodyMassIndex {
+	int height;
+	int Weight;
+	double BMI;
+
+	public void acceptRecord() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your Weight");
+		this.Weight = (int) sc.nextFloat();
+		System.out.println("Enter your height");
+		this.height = sc.nextInt();
+		this.BMI = sc.nextDouble();
+
+	}
+
+	public void calculateBMI() {
+		BMI = Weight / (height * height);
+		System.out.println(BMI);
+	}
+
+	public void classifyBMI() {
+		if (BMI < 18.5) {
+			System.out.println("underweight");
+		} else if (BMI < 24.9) {
+			System.out.println("normal weight");
+
+		} else if (BMI > 30) {
+			System.out.println("Obese");
+		}
+
+	}
+
+	public void printRecord() {
+		System.out.println(BMI + "BMI");
+		System.out.println(Weight);
+		System.out.println(height);
+	}
+
+	public static void main(String[] args) {
+		BodyMassIndex bb = new BodyMassIndex();
+		bb.acceptRecord();
+		bb.calculateBMI();
+		bb.classifyBMI();
+		bb.printRecord();
+	}
+}
