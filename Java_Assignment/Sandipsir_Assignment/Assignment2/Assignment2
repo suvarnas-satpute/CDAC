@@ -1,0 +1,26 @@
+Q 1 )  b. Declare a method-local variable status of type boolean with the value true and convert it to a String using the to String method. (Hint: Use Boolean.toString(Boolean) ).
+public class Conversion {
+
+	public static void main (String [] args) {
+		boolean status = true;
+		String str = Boolean.toString(status);
+		System.out.println(str);
+
+c. Declare a method-local variable stratus of type String with the value "true" and convert it   to a boolean using the parse Boolean method. (Hint: Use Boolean.parseBoolean(String)).
+	
+       String strStatus = "true";
+       boolean b = Boolean.parseBoolean(strStatus);
+       System.out.println(b);
+
+d)   Declare a method-local variable strStatus of type String with the value "1" or "0" and attempt to          convert it to a boolean. (Hint: parseBoolean method will not work as expected with "1" or "0")
+e)  Declare a method-local variable status of type boolean with the value true and convert it to the corresponding wrapper class using Boolean.valueOf(). (Hint: Use Boolean.valueOf(boolean)).
+       boolean status =true;
+       boolean cc=Boolean.valueOf(status);
+       System.out.println(cc);
+
+f)  Declare a method-local variable strStatus of type String with the value "true" and convert it to the corresponding wrapper class using Boolean.valueOf(). (Hint: Use Boolean.valueOf(String)).
+
+	  String strstatus ="true";
+        boolean bb=Boolean.valueOf(strstatus);
+        System.out.println(bb);
+
